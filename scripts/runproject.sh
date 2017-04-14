@@ -18,7 +18,7 @@ source "$project_root/Env/bin/activate"
 sleep 1
 
 echo "-------- Installing dependencies -------------"
-python3.4 "$project_root/"Env/bin/pip3 install -r requirements.txt
+python3 "$project_root/"Env/bin/pip3 install -r requirements.txt
 
 echo "-------- Starting django dev server -------------"
 export PYTHONPATH="$parent_dir"
