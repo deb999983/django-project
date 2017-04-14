@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "---------------- Installing Virtualenv ---------------"
-pip install virtualenv
+pip3 install virtualenv
 
 echo "---------------- Setting Python exec path ---------------"
 python_exec_path="$(which python3.4)"
@@ -18,7 +18,7 @@ source "$project_root/Env/bin/activate"
 sleep 1
 
 echo "-------- Installing dependencies -------------"
-python3.4 "$project_root/"Env/bin/pip install -r requirements.txt
+python3.4 "$project_root/"Env/bin/pip3 install -r requirements.txt
 
 echo "-------- Starting django dev server -------------"
 export PYTHONPATH="$parent_dir"
